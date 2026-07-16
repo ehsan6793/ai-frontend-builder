@@ -1,0 +1,47 @@
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #E11D48;
+  --color-accent: #F59E0B;
+  --color-background: #FFFFFF;
+  --color-surface: #F9FAFB;
+  --color-text: #111827;
+  --color-text-muted: #6B7280;
+  --color-border: #E5E7EB;
+  --color-success: #16A34A;
+  --color-warning: #D97706;
+  --color-danger: #DC2626;
+  --radius-md: 0.5rem;
+  --font-sans: Vazirmatn, sans-serif;
+}
+
+.dark {
+  --color-primary: #E11D48;
+  --color-accent: #F59E0B;
+  --color-background: #0B0F19;
+  --color-surface: #111827;
+  --color-text: #F9FAFB;
+  --color-text-muted: #9CA3AF;
+  --color-border: #1F2937;
+  --color-success: #22C55E;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

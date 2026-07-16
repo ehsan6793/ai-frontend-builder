@@ -1,0 +1,347 @@
+{
+  "created_at": "2026-07-16T17:45:16.066592+00:00",
+  "runs": [
+    {
+      "idea": "یک فروشگاه آنلاین کفش می‌خوام با صفحه اصلی، لیست محصولات، جزئیات محصول و سبد خرید",
+      "at": "2026-07-16T17:45:16.066614+00:00"
+    }
+  ],
+  "design_tokens": {
+    "typography": {
+      "font_family": "Vazirmatn, sans-serif",
+      "sizes": {
+        "xs": "0.75rem",
+        "sm": "0.875rem",
+        "base": "1rem",
+        "lg": "1.125rem",
+        "xl": "1.25rem",
+        "2xl": "1.5rem",
+        "3xl": "1.875rem",
+        "4xl": "2.25rem"
+      },
+      "weights": {
+        "regular": 400,
+        "medium": 500,
+        "bold": 700
+      },
+      "line_height": "1.7"
+    },
+    "spacing": {
+      "xs": "0.5rem",
+      "sm": "0.75rem",
+      "md": "1rem",
+      "lg": "1.5rem",
+      "xl": "2rem",
+      "2xl": "3rem"
+    },
+    "radius": {
+      "sm": "0.375rem",
+      "md": "0.5rem",
+      "lg": "0.75rem",
+      "full": "9999px"
+    },
+    "grid": {
+      "container_max_width": "1280px",
+      "columns": 12,
+      "gutter": "1.5rem",
+      "breakpoints": {
+        "sm": "640px",
+        "md": "768px",
+        "lg": "1024px",
+        "xl": "1280px"
+      }
+    },
+    "direction": "rtl",
+    "density": "compact",
+    "colors": {
+      "primary": "#E11D48",
+      "accent": "#F59E0B",
+      "background": "#FFFFFF",
+      "surface": "#F9FAFB",
+      "text": "#111827",
+      "text_muted": "#6B7280",
+      "border": "#E5E7EB",
+      "success": "#16A34A",
+      "warning": "#D97706",
+      "danger": "#DC2626"
+    }
+  },
+  "brand": {
+    "mood": "پرانرژی و متقاعدکننده",
+    "primary": "#E11D48",
+    "themes": {
+      "light": {
+        "primary": "#E11D48",
+        "accent": "#F59E0B",
+        "background": "#FFFFFF",
+        "surface": "#F9FAFB",
+        "text": "#111827",
+        "text_muted": "#6B7280",
+        "border": "#E5E7EB",
+        "success": "#16A34A",
+        "warning": "#D97706",
+        "danger": "#DC2626"
+      },
+      "dark": {
+        "primary": "#E11D48",
+        "accent": "#F59E0B",
+        "background": "#0B0F19",
+        "surface": "#111827",
+        "text": "#F9FAFB",
+        "text_muted": "#9CA3AF",
+        "border": "#1F2937",
+        "success": "#22C55E",
+        "warning": "#F59E0B",
+        "danger": "#EF4444"
+      }
+    }
+  },
+  "pages": [
+    {
+      "slug": "home",
+      "title": "صفحه اصلی",
+      "purpose": "معرفی برند و محصولات ویژه",
+      "sections": [
+        "Hero",
+        "FeaturedProducts",
+        "Categories",
+        "Newsletter"
+      ]
+    },
+    {
+      "slug": "products",
+      "title": "لیست محصولات",
+      "purpose": "نمایش و فیلتر محصولات",
+      "sections": [
+        "FilterSidebar",
+        "ProductGrid",
+        "Pagination"
+      ]
+    },
+    {
+      "slug": "product-detail",
+      "title": "جزئیات محصول",
+      "purpose": "نمایش کامل یک محصول و افزودن به سبد",
+      "sections": [
+        "Gallery",
+        "ProductInfo",
+        "Reviews",
+        "RelatedProducts"
+      ]
+    },
+    {
+      "slug": "cart",
+      "title": "سبد خرید",
+      "purpose": "مدیریت اقلام سبد خرید و پرداخت",
+      "sections": [
+        "CartList",
+        "OrderSummary",
+        "CheckoutButton"
+      ]
+    }
+  ],
+  "components": [
+    {
+      "name": "Hero",
+      "description": "بخش ابتدایی صفحه با تیتر، توضیح کوتاه و CTA",
+      "props": [
+        "title",
+        "subtitle",
+        "ctaText",
+        "ctaHref"
+      ],
+      "used_in": "home",
+      "reused_in_pages": [
+        "home"
+      ]
+    },
+    {
+      "name": "FeaturedProducts",
+      "description": "اسلایدر/گرید محصولات ویژه",
+      "props": [
+        "products"
+      ],
+      "used_in": "home",
+      "reused_in_pages": [
+        "home"
+      ]
+    },
+    {
+      "name": "Categories",
+      "description": "دسته‌بندی‌های محصول در صفحه اصلی",
+      "props": [
+        "categories"
+      ],
+      "used_in": "home",
+      "reused_in_pages": [
+        "home"
+      ]
+    },
+    {
+      "name": "Newsletter",
+      "description": "فرم عضویت در خبرنامه",
+      "props": [
+        "onSubmit"
+      ],
+      "used_in": "home",
+      "reused_in_pages": [
+        "home"
+      ]
+    },
+    {
+      "name": "FilterSidebar",
+      "description": "سایدبار فیلتر محصولات",
+      "props": [
+        "filters",
+        "onChange"
+      ],
+      "used_in": "products",
+      "reused_in_pages": [
+        "products"
+      ]
+    },
+    {
+      "name": "ProductGrid",
+      "description": "گرید محصولات با صفحه‌بندی",
+      "props": [
+        "products",
+        "columns"
+      ],
+      "used_in": "products",
+      "reused_in_pages": [
+        "products"
+      ]
+    },
+    {
+      "name": "Pagination",
+      "description": "صفحه‌بندی عمومی",
+      "props": [
+        "page",
+        "totalPages",
+        "onChange"
+      ],
+      "used_in": "products",
+      "reused_in_pages": [
+        "products"
+      ]
+    },
+    {
+      "name": "Gallery",
+      "description": "گالری تصاویر با Lightbox",
+      "props": [
+        "images"
+      ],
+      "used_in": "product-detail",
+      "reused_in_pages": [
+        "product-detail"
+      ]
+    },
+    {
+      "name": "ProductInfo",
+      "description": "اطلاعات قیمت و انتخاب گزینه‌های محصول",
+      "props": [
+        "product"
+      ],
+      "used_in": "product-detail",
+      "reused_in_pages": [
+        "product-detail"
+      ]
+    },
+    {
+      "name": "Reviews",
+      "description": "فهرست نظرات کاربران",
+      "props": [
+        "reviews"
+      ],
+      "used_in": "product-detail",
+      "reused_in_pages": [
+        "product-detail"
+      ]
+    },
+    {
+      "name": "RelatedProducts",
+      "description": "پیشنهاد محصولات مرتبط",
+      "props": [
+        "products"
+      ],
+      "used_in": "product-detail",
+      "reused_in_pages": [
+        "product-detail"
+      ]
+    },
+    {
+      "name": "CartList",
+      "description": "فهرست اقلام سبد خرید با امکان تغییر تعداد",
+      "props": [
+        "items",
+        "onChange"
+      ],
+      "used_in": "cart",
+      "reused_in_pages": [
+        "cart"
+      ]
+    },
+    {
+      "name": "OrderSummary",
+      "description": "خلاصه‌ی مبلغ سفارش",
+      "props": [
+        "subtotal",
+        "shipping",
+        "total"
+      ],
+      "used_in": "cart",
+      "reused_in_pages": [
+        "cart"
+      ]
+    },
+    {
+      "name": "CheckoutButton",
+      "description": "دکمه‌ی نهایی‌سازی خرید",
+      "props": [
+        "disabled",
+        "onClick"
+      ],
+      "used_in": "cart",
+      "reused_in_pages": [
+        "cart"
+      ]
+    }
+  ],
+  "decisions_log": [
+    {
+      "agent": "pipeline",
+      "decision": "[Product Analysis] نوع پروژه: ecommerce | 4 صفحه شناسایی شد: صفحه اصلی, لیست محصولات, جزئیات محصول, سبد خرید",
+      "at": "2026-07-16T17:45:16.085750+00:00"
+    },
+    {
+      "agent": "pipeline",
+      "decision": "[Design System] فونت: Vazirmatn, sans-serif | چگالی: compact | جهت: rtl",
+      "at": "2026-07-16T17:45:16.085758+00:00"
+    },
+    {
+      "agent": "pipeline",
+      "decision": "[Color & Branding] رنگ اصلی: #E11D48 | حال‌وهوا: پرانرژی و متقاعدکننده | تم‌ها: light, dark",
+      "at": "2026-07-16T17:45:16.085761+00:00"
+    },
+    {
+      "agent": "pipeline",
+      "decision": "[UI Components] 14 کامپوننت یکتا ساخته شد (0 مورد بین چند صفحه بازاستفاده شد → Component Library)",
+      "at": "2026-07-16T17:45:16.085762+00:00"
+    },
+    {
+      "agent": "pipeline",
+      "decision": "[Animation] 14 قانون انیمیشن تعریف شد | reduced-motion رعایت شد: True",
+      "at": "2026-07-16T17:45:16.085764+00:00"
+    },
+    {
+      "agent": "pipeline",
+      "decision": "[Frontend Developer] 25 فایل کد در workspace/فروشگاه-آنلاین نوشته شد (Next.js + TypeScript + Tailwind, dark-mode=بله)",
+      "at": "2026-07-16T17:45:16.085766+00:00"
+    },
+    {
+      "agent": "pipeline",
+      "decision": "[Code Review] امتیاز کیفیت: 100/100 | مشکلات: 0 | نتیجه: ready",
+      "at": "2026-07-16T17:45:16.085768+00:00"
+    }
+  ]
+}

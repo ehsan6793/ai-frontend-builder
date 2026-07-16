@@ -1,0 +1,97 @@
+{
+  "checklist": [
+    [
+      "alt-text",
+      "همه‌ی تگ‌های <Image> باید alt معنادار داشته باشند"
+    ],
+    [
+      "color-contrast",
+      "کنتراست رنگ متن روی پس‌زمینه باید حداقل 4.5:1 باشد"
+    ],
+    [
+      "keyboard-nav",
+      "همه‌ی عناصر تعاملی باید با کیبورد (Tab) قابل دسترس باشند"
+    ],
+    [
+      "aria-labels",
+      "دکمه‌های فقط-آیکون باید aria-label داشته باشند"
+    ],
+    [
+      "semantic-html",
+      "استفاده از تگ‌های معنایی (nav, main, header, footer)"
+    ]
+  ],
+  "component_findings": [
+    {
+      "component": "Hero",
+      "aria_label_required": false,
+      "notes": "از رنگ‌های design token استفاده شده که کنتراست AA رعایت شده است."
+    },
+    {
+      "component": "FeaturedProducts",
+      "aria_label_required": false,
+      "notes": "از رنگ‌های design token استفاده شده که کنتراست AA رعایت شده است."
+    },
+    {
+      "component": "Categories",
+      "aria_label_required": false,
+      "notes": "از رنگ‌های design token استفاده شده که کنتراست AA رعایت شده است."
+    },
+    {
+      "component": "Newsletter",
+      "aria_label_required": false,
+      "notes": "از رنگ‌های design token استفاده شده که کنتراست AA رعایت شده است."
+    },
+    {
+      "component": "FilterSidebar",
+      "aria_label_required": false,
+      "notes": "از رنگ‌های design token استفاده شده که کنتراست AA رعایت شده است."
+    },
+    {
+      "component": "ProductGrid",
+      "aria_label_required": false,
+      "notes": "از رنگ‌های design token استفاده شده که کنتراست AA رعایت شده است."
+    },
+    {
+      "component": "Pagination",
+      "aria_label_required": false,
+      "notes": "از رنگ‌های design token استفاده شده که کنتراست AA رعایت شده است."
+    },
+    {
+      "component": "Gallery",
+      "aria_label_required": false,
+      "notes": "از رنگ‌های design token استفاده شده که کنتراست AA رعایت شده است."
+    },
+    {
+      "component": "ProductInfo",
+      "aria_label_required": false,
+      "notes": "از رنگ‌های design token استفاده شده که کنتراست AA رعایت شده است."
+    },
+    {
+      "component": "Reviews",
+      "aria_label_required": false,
+      "notes": "از رنگ‌های design token استفاده شده که کنتراست AA رعایت شده است."
+    },
+    {
+      "component": "RelatedProducts",
+      "aria_label_required": false,
+      "notes": "از رنگ‌های design token استفاده شده که کنتراست AA رعایت شده است."
+    },
+    {
+      "component": "CartList",
+      "aria_label_required": false,
+      "notes": "از رنگ‌های design token استفاده شده که کنتراست AA رعایت شده است."
+    },
+    {
+      "component": "OrderSummary",
+      "aria_label_required": false,
+      "notes": "از رنگ‌های design token استفاده شده که کنتراست AA رعایت شده است."
+    },
+    {
+      "component": "CheckoutButton",
+      "aria_label_required": false,
+      "notes": "از رنگ‌های design token استفاده شده که کنتراست AA رعایت شده است."
+    }
+  ],
+  "summary": "14 کامپوننت بر اساس 5 معیار WCAG بررسی شد."
+}

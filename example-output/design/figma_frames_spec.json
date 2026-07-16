@@ -1,0 +1,40 @@
+[
+  {
+    "frame": "صفحه اصلی",
+    "width": 1440,
+    "sections": [
+      "Hero",
+      "FeaturedProducts",
+      "Categories",
+      "Newsletter"
+    ]
+  },
+  {
+    "frame": "لیست محصولات",
+    "width": 1440,
+    "sections": [
+      "FilterSidebar",
+      "ProductGrid",
+      "Pagination"
+    ]
+  },
+  {
+    "frame": "جزئیات محصول",
+    "width": 1440,
+    "sections": [
+      "Gallery",
+      "ProductInfo",
+      "Reviews",
+      "RelatedProducts"
+    ]
+  },
+  {
+    "frame": "سبد خرید",
+    "width": 1440,
+    "sections": [
+      "CartList",
+      "OrderSummary",
+      "CheckoutButton"
+    ]
+  }
+]

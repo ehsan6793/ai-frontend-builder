@@ -1,0 +1,112 @@
+{
+  "global": {
+    "color": {
+      "primary": {
+        "value": "#E11D48",
+        "type": "color"
+      },
+      "accent": {
+        "value": "#F59E0B",
+        "type": "color"
+      },
+      "background": {
+        "value": "#FFFFFF",
+        "type": "color"
+      },
+      "surface": {
+        "value": "#F9FAFB",
+        "type": "color"
+      },
+      "text": {
+        "value": "#111827",
+        "type": "color"
+      },
+      "text_muted": {
+        "value": "#6B7280",
+        "type": "color"
+      },
+      "border": {
+        "value": "#E5E7EB",
+        "type": "color"
+      },
+      "success": {
+        "value": "#16A34A",
+        "type": "color"
+      },
+      "warning": {
+        "value": "#D97706",
+        "type": "color"
+      },
+      "danger": {
+        "value": "#DC2626",
+        "type": "color"
+      }
+    },
+    "fontSize": {
+      "xs": {
+        "value": "0.75",
+        "type": "fontSizes"
+      },
+      "sm": {
+        "value": "0.875",
+        "type": "fontSizes"
+      },
+      "base": {
+        "value": "1",
+        "type": "fontSizes"
+      },
+      "lg": {
+        "value": "1.125",
+        "type": "fontSizes"
+      },
+      "xl": {
+        "value": "1.25",
+        "type": "fontSizes"
+      },
+      "2xl": {
+        "value": "1.5",
+        "type": "fontSizes"
+      },
+      "3xl": {
+        "value": "1.875",
+        "type": "fontSizes"
+      },
+      "4xl": {
+        "value": "2.25",
+        "type": "fontSizes"
+      }
+    },
+    "spacing": {
+      "xs": {
+        "value": "0.5",
+        "type": "spacing"
+      },
+      "sm": {
+        "value": "0.75",
+        "type": "spacing"
+      },
+      "md": {
+        "value": "1",
+        "type": "spacing"
+      },
+      "lg": {
+        "value": "1.5",
+        "type": "spacing"
+      },
+      "xl": {
+        "value": "2",
+        "type": "spacing"
+      },
+      "2xl": {
+        "value": "3",
+        "type": "spacing"
+      }
+    }
+  },
+  "$themes": [],
+  "$metadata": {
+    "tokenSetOrder": [
+      "global"
+    ]
+  }
+}

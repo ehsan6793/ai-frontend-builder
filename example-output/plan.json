@@ -1,0 +1,58 @@
+{
+  "steps": [
+    {
+      "id": "analysis",
+      "title": "تحلیل نیازمندی و استخراج ساختار صفحات",
+      "agent": "Product Analysis Agent",
+      "status": "done"
+    },
+    {
+      "id": "design_system",
+      "title": "تعریف Design Tokens، Typography و Grid",
+      "agent": "Design System Agent",
+      "status": "done"
+    },
+    {
+      "id": "branding",
+      "title": "انتخاب رنگ و هویت بصری (Theme روشن/تاریک)",
+      "agent": "Color & Branding Agent",
+      "status": "done"
+    },
+    {
+      "id": "components",
+      "title": "طراحی و تولید کامپوننت‌های UI",
+      "agent": "UI Components Agent",
+      "status": "done"
+    },
+    {
+      "id": "animation",
+      "title": "تعریف Animation و Micro-interaction ها",
+      "agent": "Animation Agent",
+      "status": "done"
+    },
+    {
+      "id": "codegen",
+      "title": "تولید کد Next.js + TypeScript + Tailwind",
+      "agent": "Frontend Developer Agent",
+      "status": "done"
+    },
+    {
+      "id": "review",
+      "title": "بازبینی کیفیت کد (Code Review)",
+      "agent": "Code Review Agent",
+      "status": "done"
+    },
+    {
+      "id": "skills",
+      "title": "اجرای Skillهای اضافه (Figma Export، ...)",
+      "agent": "Skill System",
+      "status": "done"
+    },
+    {
+      "id": "finalize",
+      "title": "بسته‌بندی خروجی نهایی در Workspace",
+      "agent": "Coordinator Agent",
+      "status": "done"
+    }
+  ]
+}
